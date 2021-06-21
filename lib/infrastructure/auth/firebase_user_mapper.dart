@@ -1,7 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart' as firebase;
 
-import 'package:notes_app/domain/auth/user.dart';
-import 'package:notes_app/domain/auth/value_objects.dart';
+import '../../domain/auth/user.dart';
+import '../../domain/core/value_objects.dart';
 
 extension FirebaseUserDomainX on firebase.User {
   User toDomain() {
