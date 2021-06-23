@@ -11,6 +11,8 @@ environment:
   sdk: ">=2.12.0 <3.0.0"
 
 dependencies:
+  flutter:
+    sdk: flutter
   another_flushbar: ^1.10.23
   auto_route: ^2.2.0
   bloc: ^7.0.0
@@ -19,9 +21,8 @@ dependencies:
   dartz: ^0.10.0-nullsafety
   firebase_auth: ^1.4.1
   firebase_core: ^1.3.0
-  flutter:
-    sdk: flutter
   flutter_bloc: ^7.0.1
+  flutter_hooks: ^0.17.0
   freezed_annotation: ^0.14.2
   get_it: ^7.1.3
   google_sign_in: ^5.0.4
@@ -32,9 +33,9 @@ dependencies:
   uuid: ^3.0.4
 
 dev_dependencies:
-  auto_route_generator: ^2.1.0
   flutter_test:
     sdk: flutter
+  auto_route_generator: ^2.1.0
 
   build_runner: null
 

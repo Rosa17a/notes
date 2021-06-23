@@ -39,6 +39,7 @@ class NoteFormBloc extends Bloc<NoteFormEvent, NoteFormState> {
       },
       bodyChanged: (e) async* {
         yield state.copyWith(
+
           note: state.note.copyWith(
             body: NoteBody(e.bodyStr),
           ),
@@ -64,7 +65,7 @@ class NoteFormBloc extends Bloc<NoteFormEvent, NoteFormState> {
         );
       },
       saved: (e) async* {
-        late Either<NoteFailure, Unit> failureOrSuccess;
+        Either<NoteFailure, Unit>? failureOrSuccess;
         yield state.copyWith(
           isSaving: true,
           saveFailureOrSuccessOption: none(),

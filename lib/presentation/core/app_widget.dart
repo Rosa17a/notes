@@ -34,6 +34,9 @@ class AppWidget extends StatelessWidget {
               borderSide: BorderSide(color: Colors.green[800]!),
             ),
           ),
+          floatingActionButtonTheme: FloatingActionButtonThemeData(
+            backgroundColor: Colors.blue[900],
+          ),
         ),
         routerDelegate: _router.delegate(),
         routeInformationParser: _router.defaultRouteParser(),
