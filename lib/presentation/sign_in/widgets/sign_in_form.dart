@@ -37,12 +37,10 @@ class SignInForm extends StatelessWidget {
         );
       },
       builder: (context, state) {
-      
         return Form(
-          autovalidate: state.showErrorMessages,
-          // autovalidateMode: state.showErrorMessages
-          //     ? AutovalidateMode.onUserInteraction
-          //     : AutovalidateMode.disabled,
+          autovalidateMode: state.showErrorMessages
+              ? AutovalidateMode.onUserInteraction
+              : AutovalidateMode.disabled,
           child: ListView(
             padding: const EdgeInsets.all(8),
             children: [

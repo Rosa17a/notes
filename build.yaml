@@ -1,0 +1,6 @@
+# targets: 
+#   $default:
+#     builders:
+#       json_serializible:
+#        options:
+#           explicit_to_json: true

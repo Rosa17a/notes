@@ -85,13 +85,13 @@ abstract class TodoItemDto implements _$TodoItemDto {
       _$TodoItemDtoFromJson(json);
 }
 
-class ServerTimeStampConverter implements JsonConverter<FieldValue, Object> {
+class ServerTimeStampConverter implements JsonConverter<FieldValue, Object?> {
   const ServerTimeStampConverter();
   @override
-  FieldValue fromJson(Object json) {
+  FieldValue fromJson(Object? json) {
     return FieldValue.serverTimestamp();
   }
 
   @override
-  Object toJson(FieldValue fieldValue) => fieldValue;
+  Object? toJson(FieldValue fieldValue) => fieldValue;
 }
