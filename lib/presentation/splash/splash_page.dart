@@ -6,7 +6,9 @@ import '../../application/auth/auth_bloc.dart';
 import '../routes/router.gr.dart';
 
 class SplashPage extends StatelessWidget {
-  const SplashPage({Key? key}) : super(key: key);
+  @PathParam('id')
+  final String id;
+  const SplashPage({Key? key, this.id = 'yani_param'}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

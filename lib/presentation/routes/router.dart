@@ -7,7 +7,7 @@ import '../splash/splash_page.dart';
 
 @MaterialAutoRouter(
   routes: <AutoRoute>[
-    MaterialRoute(page: SplashPage, initial: true),
+    MaterialRoute(page: SplashPage, initial: true, path: '/id:'),
     MaterialRoute(page: SigninPage),
     MaterialRoute(page: NotesOverViewPage),
     MaterialRoute(page: NoteFormPage, fullscreenDialog: true),
