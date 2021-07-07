@@ -25,6 +25,8 @@
 
   <title>notes_app</title>
   <link rel="manifest" href="manifest.json">
+  <meta name="google-signin-client_id" content="296310270936-bp7540cjhrc9mqf9e0hgnndd9enij2ha.apps.googleusercontent.com">
+
 </head>
 <body>
   <!-- This script installs service_worker.js to provide PWA functionality to
@@ -94,5 +96,28 @@
       loadMainDartJs();
     }
   </script>
+
+
+
+<script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-firestore.js"></script>
+<script>
+
+  const firebaseConfig = {
+  apiKey: "AIzaSyBPnfrA5Ke3gVeEwK-GnnFKOh5QI_xMD0U",
+  authDomain: "notes-8f26b.firebaseapp.com",
+  projectId: "notes-8f26b",
+  storageBucket: "notes-8f26b.appspot.com",
+  messagingSenderId: "296310270936",
+  appId: "1:296310270936:web:ec71c8ea18638238c320ad",
+  measurementId: "G-N2ECQKYT6L"
+};
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+<script src="main.dart.js" type="application/javascript"></script>
 </body>
 </html>
