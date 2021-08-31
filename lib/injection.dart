@@ -10,5 +10,6 @@ final GetIt getIt = GetIt.instance;
 Future<void> configureInjection(String env) async {
   await Firebase.initializeApp();
 
+  // await FirebaseAuth.instance.useEmulator('localhost');
   $initGetIt(getIt, environment: env);
 }

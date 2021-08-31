@@ -20,6 +20,7 @@ class SplashPage extends StatelessWidget {
             context.router.replace(const NotesOverViewPageRoute());
           },
           unAuthenticated: (_) {
+            print(context.router.stackData);
             context.router.replace(const SigninPageRoute());
           },
         );
